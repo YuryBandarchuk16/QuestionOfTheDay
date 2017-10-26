@@ -85,6 +85,11 @@ public class MainActivity extends AppCompatActivity {
         addFragment(R.id.fragment_container, fragment);
     }
 
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);
+    }
+
     private void addFragment(@IdRes int containerViewId, Fragment fragment) {
         getSupportFragmentManager().beginTransaction()
                 .add(containerViewId, fragment)
