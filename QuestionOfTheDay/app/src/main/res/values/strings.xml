@@ -18,4 +18,5 @@
     <string name="signin_button">Войти</string>
     <string name="question_of_the_day_title">Вопрос дня</string>
     <string name="my_answers">Мои ответы</string>
+    <string name="new_question_title">Новый вопрос!</string>
 </resources>
