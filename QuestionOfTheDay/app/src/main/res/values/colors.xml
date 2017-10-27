@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#3079ab</color>
     <color name="colorWhenBarSelected">#87CEFA</color>
     <color name="lightBlue">#39add1</color>
     <color name="darkBlue">#3079ab</color>
@@ -10,7 +10,7 @@
     <color name="mauve">#c25975</color>
     <color name="red">#e15258</color>
     <color name="orange">#f9845b</color>
-    <color name="lavender">#838cc7</color>
+    <color name="lavender">#f0838cc7</color>
     <color name="lavenderLight">#9fa8da</color>
     <color name="purple">#7d669e</color>
     <color name="aqua">#53bbb4</color>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="net.uluapp.post4like.activities.SignUpActivity">
+    android:background="@color/lavenderLight"
+    tools:context=".SignUpActivity">
 
     <EditText
         android:id="@+id/editTextUsername"
@@ -13,6 +14,8 @@
         android:layout_marginTop="120dp"
         android:hint="@string/username_hint"
         android:inputType="textPersonName"
+        android:textColor="@color/darkBlue"
+        android:textColorHint="@color/darkBlue"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,6 +27,8 @@
         android:layout_marginTop="10dp"
         android:hint="@string/email_hint"
         android:inputType="textEmailAddress"
+        android:textColor="@color/darkBlue"
+        android:textColorHint="@color/darkBlue"
         app:layout_constraintLeft_toLeftOf="@+id/editTextUsername"
         app:layout_constraintRight_toRightOf="@+id/editTextUsername"
         app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
@@ -35,6 +40,8 @@
         android:layout_marginTop="10dp"
         android:hint="@string/password_hint"
         android:inputType="textPassword"
+        android:textColor="@color/darkBlue"
+        android:textColorHint="@color/darkBlue"
         app:layout_constraintLeft_toLeftOf="@+id/editTextEmail"
         app:layout_constraintRight_toRightOf="@+id/editTextEmail"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
@@ -42,6 +49,8 @@
     <Button
         android:id="@+id/buttonSignUp"
         android:layout_width="260dp"
+        android:background="@drawable/round_gradient_button"
+        android:textColor="@color/darkDarkBlue"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:onClick="signUpButtonOnClick"
@@ -56,6 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:clickable="true"
+        android:textColor="@color/darkBlue"
         android:onClick="presentSignInActivity"
         android:text="@string/already_registered_button"
         app:layout_constraintLeft_toLeftOf="@+id/buttonSignUp"

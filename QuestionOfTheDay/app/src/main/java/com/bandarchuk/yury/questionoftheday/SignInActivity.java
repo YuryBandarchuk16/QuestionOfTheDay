@@ -32,6 +32,18 @@ public class SignInActivity extends Activity {
         String password = ((EditText) findViewById(R.id.editTextPassword)).getText().toString();
         Button button = (Button)findViewById(R.id.buttonSignIn);
         final Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.bounce);
+        myAnim.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+            }
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                loadUserIntoMainActivity();
+            }
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+            }
+        });
         MyBounceInterpolator interpolator = new MyBounceInterpolator(0.1, 20);
         myAnim.setInterpolator(interpolator);
         button.startAnimation(myAnim);
