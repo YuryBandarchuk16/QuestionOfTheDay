@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="net.uluapp.post4like.activities.SignInActivity">
+    android:background="@color/lavenderLight"
+    tools:context=".SignInActivity">
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -13,6 +14,10 @@
         android:layout_marginTop="150dp"
         android:hint="@string/email_hint"
         android:inputType="textEmailAddress"
+
+        android:textColor="@color/darkBlue"
+        android:textColorHint="@color/darkBlue"
+        android:backgroundTint="@color/darkBlue"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,6 +28,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="@string/password_hint"
+        android:textColor="@color/darkBlue"
+        android:textColorHint="@color/darkBlue"
+        android:backgroundTint="@color/darkBlue"
         android:inputType="textPassword"
         app:layout_constraintLeft_toLeftOf="@+id/editTextEmail"
         app:layout_constraintRight_toRightOf="@+id/editTextEmail"
@@ -33,8 +41,11 @@
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="@drawable/round_gradient_button"
         android:onClick="signInButtonOnClick"
+        android:textColor="@color/darkDarkBlue"
         android:text="@string/signin_button"
         app:layout_constraintLeft_toLeftOf="@+id/editTextPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
 </android.support.constraint.ConstraintLayout>
