@@ -36,37 +36,78 @@
             android:layout_marginTop="80dp"
             android:text="Сколько пальцев на ноге у человека? Дайте ответ в десятичной дроби с точностью не менее 100500 знаков после запятой." />
 
-        <TableLayout
-            android:id="@+id/question_possible_answers"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/question_statement"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp">
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
 
-            <TableRow
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
                 <Button
-                    android:text="10"
-                    />
+                    android:id="@+id/answerButton1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:background="@color/colorForEnterButtonEndColor"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Вариант ответа номер 1" />
 
-            <TableRow
+                <Button
+                    android:id="@+id/answerButton2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:background="@color/colorForEnterButtonEndColor"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Вариант ответа номер 2" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-            <Button
-                android:text="20"
-                />
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/answerButton3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:background="@color/colorForEnterButtonEndColor"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Вариант ответа номер 3" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </TableLayout>
+                <Button
+                    android:id="@+id/answerButton4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:background="@color/colorForEnterButtonEndColor"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Вариант ответа номер 4" />
 
+            </LinearLayout>
+
+
+        </LinearLayout>
 
     </RelativeLayout>
 

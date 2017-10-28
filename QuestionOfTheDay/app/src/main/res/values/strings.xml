@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Вопрос Дня</string>
+    <string name="app_name">Вопрос дня</string>
     <string name="add">Создать</string>
     <string name="account">Профиль</string>
     <string name="mark">Лучшее</string>
