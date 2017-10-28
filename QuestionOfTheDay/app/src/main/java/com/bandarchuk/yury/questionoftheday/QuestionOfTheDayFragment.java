@@ -41,8 +41,10 @@ public class QuestionOfTheDayFragment extends Fragment {
                         @Override
                         public void onAnimationEnd(Animator animator) {
                             for (int index = 0; index < answerOptions.length; index++) {
+                                answerOptions[index].setBackground(null);
                                 if (answers[index] == 1) {
                                     answerOptions[index].setBackgroundColor(R.color.green);
+
                                 } else {
                                     answerOptions[index].setBackgroundColor(R.color.red);
                                 }
