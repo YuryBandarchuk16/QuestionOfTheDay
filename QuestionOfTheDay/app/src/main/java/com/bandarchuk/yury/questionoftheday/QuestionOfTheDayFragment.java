@@ -61,7 +61,7 @@ public class QuestionOfTheDayFragment extends Fragment {
 
                         }
                     });
-                    objectAnimator.setDuration(2000);
+                    objectAnimator.setDuration(500);
 
                     objectAnimator.start();
                 }
